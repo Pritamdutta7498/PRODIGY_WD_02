@@ -15,6 +15,8 @@ body {
   box-shadow: rgba(236, 232, 232, 0.849) 0px 0px 0px, rgba(249, 249, 249, 0.984) 0px 0px 10px;
   border-radius: 20px;
   padding: 5px 30px;
+  width: 40%;
+  
 }
 .name {
   font-size: 3rem;
@@ -39,14 +41,19 @@ body {
   #laps {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 0 auto;
+    width: 250px;
+    height: 100px;
+    overflow-y: auto; 
   }
   
   #laps li {
     margin-bottom: 5px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  }
+  #laps li:active{
+    background-color: antiquewhite;
+    color: #243B55;
   }
 
 button {
