@@ -49,3 +49,15 @@ startButton.addEventListener("click", () => {
 pauseButton.addEventListener("click", ()=>{
     clearInterval(intervalId)
 } );
+
+// reset the timer
+resetButton.addEventListener("click", () => {
+    clearInterval(intervalId);
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+    lapTimes = [];
+    timeElement.textContent = "00:00:00";
+    lapsElement.innerHTML = "";
+});
