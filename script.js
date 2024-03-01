@@ -37,6 +37,7 @@ function updateTime() {
         .toString()
         .padStart(3, "0")}`;
 }
+// start the timer
 
 startButton.addEventListener("click", () => {
     intervalId = setInterval(() => {
@@ -44,3 +45,7 @@ startButton.addEventListener("click", () => {
     }, 10);
 });
 
+// pause the timer
+pauseButton.addEventListener("click", ()=>{
+    clearInterval(intervalId)
+} );
