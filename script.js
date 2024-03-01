@@ -61,3 +61,12 @@ resetButton.addEventListener("click", () => {
     timeElement.textContent = "00:00:00";
     lapsElement.innerHTML = "";
 });
+
+lapButton.addEventListener("click", () => {
+    lapTimes.push(`${hours.toString().padStart(2, "0")}:${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}:${milliseconds
+        .toString()
+        .padStart(3, "0")}`);
+    lapsElement.innerHTML = lapTimes.join("<li>");
+});
