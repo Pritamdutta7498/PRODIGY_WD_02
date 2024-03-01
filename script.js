@@ -38,3 +38,9 @@ function updateTime() {
         .padStart(3, "0")}`;
 }
 
+startButton.addEventListener("click", () => {
+    intervalId = setInterval(() => {
+        updateTime();
+    }, 10);
+});
+
