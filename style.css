@@ -15,7 +15,7 @@ body {
   box-shadow: rgba(236, 232, 232, 0.849) 0px 0px 0px, rgba(249, 249, 249, 0.984) 0px 0px 10px;
   border-radius: 20px;
   padding: 5px 30px;
-  width: 40%;
+  width: 400px;
   
 }
 .name {
@@ -29,6 +29,9 @@ body {
     height: 200px;
     /* border:10px solid rgba(251, 191, 100, 0.899); */
     border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+   
 
 }
 #time {
